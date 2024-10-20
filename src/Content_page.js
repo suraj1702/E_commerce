@@ -1,22 +1,21 @@
-import axios from 'axios'
-import React, { useEffect } from 'react'
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { Fetctproductlist } from './actions/Actions';
 
-   function Content_page() {
-    function api(){
-    axios.get(' https://fakestoreapi.com/products')
-    .then(response => {
-      console.log(response.data);
-    }, error => {
-      console.log(error);
-    });
-    }
+
+
+function Content_page() {
+  const dispatch =  useDispatch()
+  const{productList} = useSelector((state) => state.product)
+
  useEffect(()=>{
-    api()
+    dispatch(Fetctproductlist());
  },[])
 
+ console.log(productList)
   return (
    <>
-  
+    <p className='text-orange-400'>suraj</p>
    </>
   )
 }

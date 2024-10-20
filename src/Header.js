@@ -5,19 +5,15 @@ import './Header.css';
 function Header() {
     return (
         <>
-            <div id="header">
-                <p id='logo'>MY STORE</p>
-                <input type='text' id='search'></input>
-                <button>serach</button>
-                <div className='burger'>
-                    <p></p>
-                    <p></p>
-                    <p></p>
+            <div className='w-100 bg-red-200 flex justify-between p-1 content-center'>
+                <p className='text-blue-900 content-center font-medium'>MY STORE</p>
+                
+                <input type='text' placeholder='Search' className='w-1/3 h-9 mb-4 content-center flex' ></input>
+               
 
-                </div>
-                <div className=' wishlist'>
-                    <img className='wishlistimage ' src={wishlist} />
-                    <img className='wishlistimage' src={cart} />
+                <div className=' '>
+                    {/* <img className='wishlistimage ' src={wishlist} /> */}
+                    <img className='w-9' src={cart} />
 
                 </div>
 
