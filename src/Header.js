@@ -13,7 +13,8 @@ function Header() {
 
                 <div className=' '>
                     {/* <img className='wishlistimage ' src={wishlist} /> */}
-                    <img className='w-9' src={cart} />
+                    {/* <p>0</p> */}
+                    <img className='w-9 mt-5' src={cart} />
 
                 </div>
 
